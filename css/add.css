@@ -1,0 +1,57 @@
+.addListing {
+    display: flex;
+    flex-direction: column;
+    margin: 45px 0px;
+}
+
+.line {
+    border-style: solid;
+    border-color: rgb(31, 28, 28);
+    width: 100%;
+}
+
+.addListing input,
+.addListing label {
+    margin: 10px 0px;
+}
+
+.addListing label {
+    font-size: 26px;
+}
+
+.addListing input {
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+.addListing h1,
+.addListing input,
+.addListing label,
+.addListing button {
+    margin-left: 20px;
+}
+
+.addListing #line {
+    margin: 0px 0px 10px 0px;
+    border: dashed rgb(207, 207, 207);
+}
+
+.addListing button {
+    padding: 15px;
+    width: 300px;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    background-color: #461488;
+}
+
+.addListing input {
+    width: auto;
+    max-width: 500px;
+}
+
+.addListing button:hover {
+    opacity: 0.8;
+}
