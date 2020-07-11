@@ -4,7 +4,7 @@
     margin: 50px;
     margin-top: 100px;
     /* if switch picture buttons need to be fixed in place */
-    height: 70vh;
+    height: 80vh;
 }
 
 .photos {
@@ -28,7 +28,8 @@
     margin-top: 10px;
 }
 
-.buttons button {
+.buttons button,
+.specs .delete {
     padding: 10px 23%;
     width: 46%;
     border-style: none;
@@ -37,6 +38,7 @@
     cursor: pointer;
     color: white;
     transition: .2s ease-in;
+    white-space: nowrap;
 }
 
 .buttons button:hover {

@@ -42,7 +42,7 @@ function addAd() {
                 alert("Unknown error occured!");
             else {
                 alert("Listing successfully added!");
-                location.reload();
+                window.location = "../index.html";
             }
         });
 }

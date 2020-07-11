@@ -8,11 +8,17 @@ function getListings() {
         .then(result => result.json())
         .then(data => {
             if (data['responseCode'] == 200) {
+                var found = false;
                 for (var i = 0; i < data['listings'].length; i++)
                     if (data['listings'][i][0] == window.location.hash.split('#')[1]) {
+                        found = true;
                         images = data['listings'][i][7].split(',');
                         populate(data['listings'][i]);
                     }
+                if (found == false) {
+                    alert("Page does not exist!")
+                    window.location = "../index.html";
+                }
             } else alert("Unknown error occured!");
 
 
