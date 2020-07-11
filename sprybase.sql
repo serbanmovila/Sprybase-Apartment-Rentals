@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gazdă: 127.0.0.1
--- Timp de generare: iul. 10, 2020 la 11:02 PM
+-- Timp de generare: iul. 11, 2020 la 09:55 AM
 -- Versiune server: 10.4.11-MariaDB
 -- Versiune PHP: 7.4.6
 
@@ -26,6 +26,8 @@ SET time_zone = "+00:00";
 --
 -- Structură tabel pentru tabel `listings`
 --
+
+DROP TABLE IF EXISTS listings;
 
 CREATE TABLE `listings` (
   `id` int(8) NOT NULL,
@@ -66,7 +68,7 @@ ALTER TABLE `listings`
 -- AUTO_INCREMENT pentru tabele `listings`
 --
 ALTER TABLE `listings`
-  MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
