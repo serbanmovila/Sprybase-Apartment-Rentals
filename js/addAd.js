@@ -15,6 +15,14 @@ function addAd() {
     var price = document.getElementById("price").value;
     var phone = document.getElementById("phone").value;
 
+    if (title.length > 150) {
+        alert("Title cannot exceed 150 characters!");
+        return;
+    } else if (description.length > 500) {
+        alert("Description cannot exceed 500 characters!");
+        return;
+    }
+
     api = api.concat(title, "&description=", description, "&type=", type,
         "&address=", address, "&price=", price, "&phone=", phone, "&photos=");
 

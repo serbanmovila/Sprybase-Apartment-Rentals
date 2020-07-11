@@ -1,9 +1,10 @@
 .item {
     display: flex;
     flex-direction: row;
-    margin: 45px;
-    margin-top: 90px;
-    padding: 20px;
+    margin: 50px;
+    margin-top: 100px;
+    /* if switch picture buttons need to be fixed in place */
+    height: 70vh;
 }
 
 .photos {
@@ -11,6 +12,7 @@
     flex-direction: column;
     justify-content: space-between;
     width: 80%;
+    /* height: 550px; */
     /* height: 30%; */
     overflow: hidden;
 }
@@ -27,9 +29,8 @@
 }
 
 .buttons button {
-    padding: 10px;
-    padding-right: 23%;
-    padding-left: 23%;
+    padding: 10px 23%;
+    width: 46%;
     border-style: none;
     font-size: 25px;
     background-color: #461488;
